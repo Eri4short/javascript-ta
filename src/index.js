@@ -1,6 +1,17 @@
 // complete the function
 function prime (num) {
   // code goes here
+  if (num === 0 || num === 1){
+    return false;
+  }
+
+  for(let i = 2; i <= num/2; i++){
+    if (num % i === 0){
+      return false;
+      break;
+    }
+  }
+  return true;
 }
 
 function solution (arg) {
